@@ -50,3 +50,38 @@ git --version
 
 # Пример вывода: git version 2.43.0
 
+---
+
+## 3. Удаленные команды Git и работа с форками
+
+### Основные команды работы с удаленным репозиторием
+| Команда | Описание | Пример |
+|---------|----------|--------|
+| `git clone` | Клонирование репозитория | `git clone https://github.com/user/repo.git` |
+| `git remote add` | Привязка удаленного репозитория | `git remote add origin https://github.com/user/repo.git` |
+| `git fetch` | Загрузка метаданных без слияния | `git fetch origin` |
+| `git pull` | Скачивание + автоматическое слияние | `git pull origin main` |
+| `git push` | Отправка изменений на сервер | `git push origin main` |
+
+### Принцип работы с форками (Fork)
+**Fork** – это копия репозитория другого пользователя на вашем GitHub-аккаунте. Используется для участия в open-source проектах без прав на запись в оригинал.
+
+**Типичный workflow:**
+1. Нажмите кнопку **Fork** на странице оригинального репозитория.
+2. Склонируйте свою копию: `git clone https://github.com/your-username/repo-forked.git`
+3. Добавьте оригинал как `upstream`: `git remote add upstream https://github.com/original-owner/repo.git`
+4. Работайте в своей ветке, делайте коммиты и пушьте в свой fork.
+5. Создайте **Pull Request** на GitHub в оригинальный репозиторий.
+6. Синхронизируйте fork с оригиналом: `git fetch upstream && git merge upstream/main`
+
+**Пример полного цикла:**
+```bash
+git clone https://github.com/you/project-fork.git
+cd project-fork
+git remote add upstream https://github.com/author/project.git
+git checkout -b feature/new-docs
+# ... редактирование файлов ...
+git add . && git commit -m "docs: add global commands"
+git push origin feature/new-docs
+# Далее создаём Pull Request через веб-интерфейс GitHub
+
