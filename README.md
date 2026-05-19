@@ -46,7 +46,7 @@
 
 ```bash
 
-git --version
+git --version```
 
 # Пример вывода: git version 2.43.0
 
@@ -72,7 +72,7 @@ git init demo
 echo "Hello Git" > readme.md
 git add readme.md
 git commit -m "init: first commit"
-git log --oneline
+git log --oneline```
 
 ## 3. Удаленные команды Git и работа с форками
 
@@ -101,10 +101,11 @@ git log --oneline
 git clone https://github.com/you/project-fork.git
 cd project-fork
 git remote add upstream https://github.com/author/project.git
-git checkout -b feature/new-docs
+git checkout -b feature/new-docs```
 # ... редактирование файлов ...
+```bash
 git add . && git commit -m "docs: add global commands"
-git push origin feature/new-docs
+git push origin feature/new-docs```
 # Далее создаём Pull Request через веб-интерфейс GitHub
 
 
