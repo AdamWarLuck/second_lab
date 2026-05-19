@@ -31,13 +31,9 @@
 ### Установка Git
 
 | ОС       | Команда / Действие                                                                 |
-
 |----------|------------------------------------------------------------------------------------|
-
 | Windows  | Скачайте установщик с [git-scm.com](https://git-scm.com), запустите, оставьте настройки по умолчанию. |
-
 | macOS    | `brew install git` или `xcode-select --install`                                    |
-
 | Linux    | `sudo apt update && sudo apt install git` (Debian/Ubuntu)                          |
 
 
@@ -49,7 +45,7 @@
 git --version
 ```
 
-# Пример вывода: git version 2.43.0
+**Пример вывода: git version 2.43.0**
 
 ---
 
