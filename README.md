@@ -50,3 +50,27 @@ git --version
 
 # Пример вывода: git version 2.43.0
 
+---
+
+## 2. Локальные команды Git
+
+| Команда | Описание | Пример |
+|---------|----------|--------|
+| `git init` | Инициализация нового репозитория | `git init my-project` |
+| `git status` | Проверка статуса файлов | `git status` |
+| `git add` | Добавление файлов в индекс | `git add .` (все) или `git add file.txt` |
+| `git commit` | Фиксация изменений | `git commit -m "fix: исправлена орфография"` |
+| `git log` | История коммитов | `git log --oneline --graph` |
+| `git diff` | Показать изменения до коммита | `git diff HEAD` |
+| `git branch` | Список веток | `git branch -a` |
+| `git switch` / `checkout` | Переключение веток | `git switch local` |
+| `git stash` | Временное сохранение изменений | `git stash push -m "work in progress"` |
+
+**Пример типичного локального цикла:**
+```bash
+git init demo
+echo "Hello Git" > readme.md
+git add readme.md
+git commit -m "init: first commit"
+git log --oneline
+
