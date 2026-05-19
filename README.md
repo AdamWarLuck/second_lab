@@ -16,7 +16,7 @@
 
 ### Создание учетной записи GitHub
 
-1. Перейдите на \[github.com](https://github.com)
+1. Перейдите на [github.com](https://github.com)
 
 2. Нажмите кнопку **Sign up**
 
@@ -34,7 +34,7 @@
 
 |----------|------------------------------------------------------------------------------------|
 
-| Windows  | Скачайте установщик с \[git-scm.com](https://git-scm.com), запустите, оставьте настройки по умолчанию. |
+| Windows  | Скачайте установщик с [git-scm.com](https://git-scm.com), запустите, оставьте настройки по умолчанию. |
 
 | macOS    | `brew install git` или `xcode-select --install`                                    |
 
@@ -46,7 +46,8 @@
 
 ```bash
 
-git --version```
+git --version
+```
 
 # Пример вывода: git version 2.43.0
 
@@ -72,8 +73,8 @@ git init demo
 echo "Hello Git" > readme.md
 git add readme.md
 git commit -m "init: first commit"
-git log --oneline```
-
+git log --oneline
+```
 ## 3. Удаленные команды Git и работа с форками
 
 ### Основные команды работы с удаленным репозиторием
@@ -101,11 +102,11 @@ git log --oneline```
 git clone https://github.com/you/project-fork.git
 cd project-fork
 git remote add upstream https://github.com/author/project.git
-git checkout -b feature/new-docs```
+git checkout -b feature/new-docs
+```
 # ... редактирование файлов ...
 ```bash
 git add . && git commit -m "docs: add global commands"
-git push origin feature/new-docs```
+git push origin feature/new-docs
+```
 # Далее создаём Pull Request через веб-интерфейс GitHub
-
-
